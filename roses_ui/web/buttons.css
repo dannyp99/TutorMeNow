@@ -1,0 +1,27 @@
+button {
+  border-radius: 7px;
+  border: 1px solid #811e0b;
+  background-color: #df4c5a;
+  color: white;
+  font-size: 24px;
+  padding: 10px;
+  font-family: 'Overlock', cursive;
+  font-weight: 700;
+  text-shadow:
+  -1px -1px 0 black,
+   1px -1px 0 black,
+  -1px 1px 0 black,
+   1px 1px 0 black;
+}
+
+button:hover {
+  background-color: #fd907a;
+}
+
+button:active {
+  background-color: #811e0b;
+}
+
+button i {
+  color: #FFEB3B;
+}

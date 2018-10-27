@@ -1,0 +1,46 @@
+#products_list {
+  grid-column: all;
+}
+
+#products_list .product {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto 1fr 1fr;
+  align-items: stretch;
+  grid-column-gap: 10px;
+  line-height: 50px;
+}
+
+#products_list [name=weight] {
+  width: 4rem;
+}
+
+#products_list [name=price] {
+  width: 4rem;
+}
+
+#products_list button.save i {
+  color: white;
+}
+
+#products_list button.remove i {
+  color: white;
+}
+
+#products_list button.save {
+  background-color: #6fc91d;
+  border-color: #2d5708;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+#products_list button.remove {
+  background-color: #F44336;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}

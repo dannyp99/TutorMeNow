@@ -1,0 +1,10 @@
+#new_sale {
+  grid-column: all;
+
+  margin-top: 40px;
+  justify-self: center;
+
+  display: grid;
+  row-gap: 10px;
+  grid-template-rows: auto auto;
+}

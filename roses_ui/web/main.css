@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Lora|Playball|Sacramento|Overlock:400,700,900');
+@import url('./buttons.css');
+@import url('./login_form.css');
+@import url('./new_sale_form.css');
+@import url('./products_list.css');
+
+html {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  background: linear-gradient(#ffd5d2, white);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body {
+  margin: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 40px;
+  border-top: 22px solid #df4c5a;
+
+  /* transparent/white stripes */
+  background-image: linear-gradient(90deg, transparent 25%, #ffffff 25%, #ffffff 50%, transparent 50%, transparent 75%, #ffffff 75%, #ffffff 100%);
+  background-size: 70px 70px;
+  font-family: 'Overlock', serif;
+  font-size: 24px;
+  height: 100%;
+  color: #333;
+  box-sizing: border-box;
+
+  display: grid;
+  grid-template-columns: 1fr [ all-start left-start] 250px [left-end middle-start] minmax(max-content, 300px) [middle-end right-start] 250px [right-end all-end] 1fr;
+  grid-template-rows: [start-header] min-content [end-header] min-content min-content min-content min-content;
+  grid-column-gap: 10px;
+}
+
+input[type="text"], input[type="password"], input[type="number"], select {
+  font-size: 24px;
+  font-family: 'Overlock', serif;
+}
+
+
+h1, h2, h3 {
+  font-family: 'Playball', cursive;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  font-size: 72px;
+  color: #fdcb4c;
+  text-shadow:
+    -1px -1px 0 #8d5107,
+     1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000,
+     1px 1px 3px #000;
+  position: relative;
+  margin-top: -32px;
+  grid-column: all;
+  font-family: 'Sacramento', cursive;
+}
+
+h2 {
+  font-family: 'Sacramento', cursive;
+  text-align: center;
+  color: #333;
+  grid-column: all;
+  margin-bottom: 30px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.box {
+  border: 7px solid #ffd5d2;
+  border-radius: 15px;
+  box-shadow: 1px 1px 2px 2px rgba(0,0,0,0.3);
+  background-color: white;
+
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 75px;
+  padding-right: 75px;
+
+}
+
+#products_button {grid-column: left;}
+#new_sale_button {grid-column: middle;}
+#sales_button    {grid-column: right;}
+
+#products_button, #new_sale_button, #sales_button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

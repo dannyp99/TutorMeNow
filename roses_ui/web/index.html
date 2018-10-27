@@ -1,0 +1,48 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <title>Rose's Jam Store</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css"/>
+  </head>
+  <body>
+    <h1 class="">Jammin'</h1>
+    <h2>Jams & Jellies by Rose</h2>
+    <form id="login" class="box">
+      <label>API URL</label>
+      <input type="text" name="api_url" placeholder="API URL" value="http://localhost:5000"/>
+
+      <button id="connect">Log In</button>
+    </form>
+
+    <button id="products_button" class="hidden"><i class="fas fa-box"></i>                Products</button>
+    <button id="new_sale_button" class="hidden"><i class="fas fa-dollar-sign"></i>        New Sale</button>
+    <button id="sales_button"    class="hidden"><i class="fas fa-clipboard-list"></i> Sales Report</button>
+
+    <form id="new_sale" class="hidden box">
+      <h3>Record Sale</h3>
+      <select name="customer_id">
+        <option value="new">New Customer</option>
+      </select>
+      <input type="text" name="new_customer_name"    placeholder="Customer Name"   />
+      <input type="text" name="new_customer_address" placeholder="Customer Address"/>
+      <select name="product_id">
+        <option value="">Select Product</option>
+      </select>
+
+      <div class="price_block">
+         <input type="text" name="count" value="1"/> x $<span name="price">0</span> = $<span name="total">0</span>
+      </div>
+      <button id="sell"> Sold! </button>
+    </form>
+
+    <div id="products_list" class="hidden">
+      <h3> Products </h3>
+      <button id="add_product"><i class="fas fa-plus"></i> Add Product</button>
+    </div>
+
+    <script src="main.js" type="module"></script>
+  </body>
+</html>
