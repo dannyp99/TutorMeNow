@@ -1,3 +1,7 @@
+function uuid() {
+    return crypto.getRandomValues(new Uint32Array(4)).join('-');
+}
+
 $(document).ready(function() {
   $('#contact-form').submit(function(e) {
     var name    = document.getElementById('name')
@@ -42,6 +46,7 @@ $(document).ready(function() {
     }else{
       e.preventDefault();
       $(this).get(0).reset();
+      var unique = uuid();
       alertify.success("Request Sent");
    }
   });
