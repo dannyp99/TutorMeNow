@@ -1,39 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Am a tutor</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1.0">
-    <meta name="description" content="sample description">
-    <meta name="author" content="kodeWeave">
-    <meta http-equiv="X-UA-Compatible" content="IE=9" />
-    <script src="libraries/jquery/jquery.js"></script>
-      <script src="libraries/jquery/jquery-migrate-1.2.1.min.js"></script>
-    <script src="libraries/jquery/jquery.js"></script>
-      <script src="libraries/jquery/jquery-migrate-1.2.1.min.js"></script>
-    <script src="libraries/jquery/jquery.js"></script>
-      <script src="libraries/jquery/jquery-migrate-1.2.1.min.js"></script>
-    <script src="libraries/jquery/jquery.js"></script>
-      <script src="libraries/jquery/jquery-migrate-1.2.1.min.js"></script>
-    <script src="libraries/jquery/jquery.js"></script>
-      <script src="libraries/jquery/jquery-migrate-1.2.1.min.js"></script>
-    <link rel="stylesheet" href="libraries/bootstrap/bootstrap.css" />
-      <script src="libraries/bootstrap/bootstrap.js"></script>
-    <link rel="stylesheet" href="libraries/alertifyjs/css/alertify.min.css" />
-      <link rel="stylesheet" href="libraries/alertifyjs/css/themes/default.min.css" />
-      <script src="libraries/alertifyjs/alertify.min.js"></script>
-    <script src="libraries/jquery/jquery.js"></script>
-      <script src="libraries/jquery/jquery-migrate-1.2.1.min.js"></script>
-    <link rel="stylesheet" href="libraries/font-awesome/font-awesome.css" />
-    <link rel="stylesheet" href="libraries/font-awesome/macset.css" />
-    <link rel="stylesheet" href="css/index.css" />
-  </head>
-  <body>
-
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Join Session</title>
+    <title>need a tutor</title>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1.0">
     <meta name="description" content="sample description">
@@ -71,7 +39,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Join Session</title>
+    <title>need a tutor</title>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1.0">
     <meta name="author" content="kodeWeave">
@@ -170,17 +138,17 @@ input[type=submit]:hover {
   <div class="w3-bar w3-red w3-card w3-left-align w3-large">
     <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
     <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
-    <a href="student.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Need Tutor</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Need Tutor</a>
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Am Tutor</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Join Session</a>
+    <a href="session.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Join Session</a>
   </div>
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
 	<a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
-    <a href="student.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Need Tutor</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Need Tutor</a>
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Am Tutor</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Join Session</a>
+    <a href="session.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Join Session</a>
   </div>
 </div>
 <h2>In need of a tutor?</h2>
@@ -188,22 +156,40 @@ input[type=submit]:hover {
 
 <div class="container">
   <div style="text-align:center">
-    <h2><strong>Join Session</strong></h2>
-    <p>Join a session and start tutoring </p>
+    <h2>Student Information</h2>
+    <p>In need of an in-person tutor? We'll be with you ASAP!</p>
   </div>
   <div class="row">
-
+    <div class="column">
+      <div id="map" style="width:100%;height:600px"></div>
     </div>
     <div class="column">
       <form id="contact-form">
-          <div style="text-align:center">
-          
-        <label for="name">Enter your session ID and tutor!</label>
-        <input align="center" type="text" id="Session" name="Session" placeholder="Enter a Session ID.." style="width:500px">
-       
-    
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name..">
+        <label for="scid">School I.D</label>
+        <input type="text" id="scid" name="schoolid" placeholder="Your School ID..">
+        <label for="location">Tutoring Approved Location</label>
+        <select id="location" name="location">
+          <option value="library">Rosenthal Library</option>
+          <option value="studentcenter">QC Student Center</option>
+          <option value="keiley">Keiley Hall 303 </option>
+        </select>
+        <label for="subject">Subject</label>
+        <select id="subject" name="subject">
+          <option value="math">Calculus</option>
+          <option value="science">Physics</option>
+          <option value="english">English</option>
+          <option value="csc">Computer Science</option>
+        </select>
+      <label for="pay">Hourly Pay</label>
+          <input type="number" max="15" min="5" id="pay" name="pay" placeholder="From 5 to 15 dollars an hour..." style="width:200px; margin-bottom:16px;">
         
-       
+         <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="Your college email...">
+        
+        <label for="topic">Tell us more</label>
+        <textarea id="topic" name="topic" placeholder="Specifically what?" style="height:170px"></textarea>
         <input type="submit" value="Submit">
       </form>
     </div>
@@ -233,14 +219,10 @@ input[type=submit]:hover {
 </html>
 
 
-    <script src="js/session.js"></script>
+    <script src="js/student.js"></script>
 
 
         
 
-  </body>
-</html>
-
-    <script src="js/session.js"></script>
   </body>
 </html>
