@@ -198,6 +198,45 @@ input[type=submit]:hover {
 <div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
     <h1 class="w3-margin w3-xlarge">Don't stress, we're here to help!</h1>
 </div>
+  <script>
+
+// Initialize google maps
+
+function myMap() {
+
+  var noCenter= new google.maps.LatLng(40.735690, -73.817766);
+
+  var myCenter= new google.maps.LatLng(40.736841, -73.819972);
+
+  var myCenter1 = new google.maps.LatLng(40.734361, -73.815986);
+
+  var myCenter2 = new google.maps.LatLng(40.735964, -73.815982);
+
+  var mapCanvas = document.getElementById("map");
+
+  var mapOptions = {center: noCenter, zoom: 16};
+
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+
+  var marker = new google.maps.Marker({position:myCenter});
+
+  var marker1 = new google.maps.Marker({position:myCenter1});
+
+ var marker2 = new google.maps.Marker({position:myCenter2});
+
+  marker.setMap(map);
+
+  marker1.setMap(map);
+
+  marker2.setMap(map);
+
+}
+
+</script>
+
+ 
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLu_y031nSxsKdj4FrKnM8eRQ_ENcp3Us&callback=myMap"></script>
 
 <!-- Footer -->
 <footer class="w3-container w3-padding-64 w3-center w3-opacity">  
