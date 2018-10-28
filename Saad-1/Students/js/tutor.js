@@ -65,7 +65,7 @@ $(document).ready(function() {
 
     $(this).get(0).reset();
 
-     
+      window.location.href="account.html";
 
       alertify.success("Tutor Created");
 

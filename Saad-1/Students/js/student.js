@@ -4,6 +4,14 @@ function uuid() {
 
 }
 
+function redirect()
+{
+
+
+    window.location.href="request.html";
+   
+}
+
  
 
 $(document).ready(function() {
@@ -81,9 +89,13 @@ $(document).ready(function() {
     $(this).get(0).reset();
 
       var unique = uuid();
-
+      
+      window.location.href="request.html";
+		
+      
       alertify.success("Request Sent");
-
+	  
+      
    }
 
   });
