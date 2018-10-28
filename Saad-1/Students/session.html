@@ -195,8 +195,8 @@ input[type=submit]:hover {
 
     </div>
     <div class="column">
-      <form id="contact-form">
-          <div style="text-align:center">
+      <form  name="contact-form" id="contact-form" method="post">  
+    
           
         <label for="name">Enter your session ID and tutor!</label>
         <input align="center" type="text" id="Session" name="Session" placeholder="Enter a Session ID.." style="width:500px">
@@ -204,7 +204,7 @@ input[type=submit]:hover {
     
         
        
-        <input type="submit" value="Submit">
+        <input type="submit" class="button4" name="submit" id="submit" value="Submit" onclick="redirect();" >
       </form>
     </div>
   </div>
