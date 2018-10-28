@@ -19,19 +19,7 @@ $(document).ready(function() {
       	alertify.error("Please enter your School I.D.");
       	return false;
     }
- /*   else if(!loc.value){
-      	alertify.error("Please choose a Tutoring Location");
-      	return false;
-    }
-    else if(!subject.value){
-      	alertify.error("Please choose a Subject");
-      	return false;
-    }
-  else if(!prof.value){
-      	alertify.error("Please enter your professor");
-      	return false;
-    }
-  */else if(!email.value){ 
+    else if(!email.value){ 
       	alertify.error("Please enter your QC Student email");
       	return false;
     }else{
@@ -42,6 +30,3 @@ $(document).ready(function() {
    }
   });
 });
-
-
-
