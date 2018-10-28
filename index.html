@@ -4,15 +4,14 @@
     <title>Am a tutor</title>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1.0">
+    <meta name="description" content="home">
     <meta name="author" content="kodeWeave">
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
-    <link rel="stylesheet" href="libraries/bootstrap/bootstrap.css" />
-      <script src="libraries/bootstrap/bootstrap.js"></script>
-    <script src="libraries/jquery/jquery.js"></script>
-      <script src="libraries/jquery/jquery-migrate-1.2.1.min.js"></script>
     <link rel="stylesheet" href="libraries/alertifyjs/css/alertify.min.css" />
       <link rel="stylesheet" href="libraries/alertifyjs/css/themes/default.min.css" />
       <script src="libraries/alertifyjs/alertify.min.js"></script>
+    <link rel="stylesheet" href="libraries/bootstrap/bootstrap.css" />
+      <script src="libraries/bootstrap/bootstrap.js"></script>
     <script src="libraries/jquery/jquery.js"></script>
       <script src="libraries/jquery/jquery-migrate-1.2.1.min.js"></script>
     <link rel="stylesheet" href="libraries/font-awesome/font-awesome.css" />
@@ -22,131 +21,92 @@
   <body>
 
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-* {
-    box-sizing: border-box;
-}
-
-/* Style inputs */
-input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-}
-
-input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    cursor: pointer;
-}
-
-input[type=submit]:hover {
-    background-color: #45a049;
-}
-
-/* Style the container/contact section */
-.container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 10px;
-}
-
-/* Create two columns that float next to eachother */
-.column {
-    float: left;
-    width: 50%;
-    margin-top: 6px;
-    padding: 20px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-    .column, input[type=submit] {
-        width: 100%;
-        margin-top: 0;
-    }
-}
-</style>
-</head>
 <body>
 
-<h2>Tutor Registration</h2>
-<p>Put your information in and become a campus tutor</p>
-
-<div class="container">
-  <div style="text-align:center">
-    <h2>Tutor Information</h2>
-    <p></p>
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="student.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Need a Tutor</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Am a Tutor</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Join Session</a>
   </div>
-  <div class="row">
-    <div class="column">
-      <div id="map" style="width:100%;height:600px"></div>
-    </div>
-    <div class="column">
-      <form id="contact-form">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="Your name..">
-        <label for="scid">School I.D</label>
-        <input type="text" id="scid" name="schoolid" placeholder="Your School ID..">
-       
 
- 
-         <label for="email">Email</label>
-        <input type="text" id="email" name="email" placeholder="Your college email..  ssmk.">
-        <fieldset>
-    <legend>Subjects You Can Tutor</legend>
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="student.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Need a Tutor</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Am a Tutor</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Join Session</a>
+  </div>
+</div>
 
-    <div>
-        <input type="checkbox" id="math" name="feature"
-               value="math" checked />
-        <label for="scales">Math</label>
-    </div>
+<!-- Header -->
+<header class="w3-container w3-red w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo"><i>TutorMeNow</i></h1>
+  <p class="w3-xlarge">GET HELP WITH YOUR CLASSES NOW</p>
 
-    <div>
-        <input type="checkbox" id="science" name="feature"
-               value="science" />
-        <label for="horns">Science</label>
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>About TutorMeNow</h1>
+      <h5 class="w3-padding-32"><strong>Finals or midterms week?<br /><br />Have a test or a quiz coming up?<br /><br />Procrasinating has you studing late at night? <br /><br />YouTube videos not enough? <br /></strong></h5>
+
+      <p class="w3-text-grey"><strong>Don't worry, we dont judge, we're just here to help! No matter the time or day, if you're on campus let us help you! Request a student tutor through us, we'll take care of the rest!</strong></p>
     </div>
 
-    <div>
-        <input type="checkbox" id="claws" name="feature"
-               value="claws" />
-        <label for="claws">Liberal Arts</label>
-    </div>
-
-</fieldset>
-        
-          
-          
-        <input type="submit" value="Submit">
-      </form>
+    <div class="w3-third w3-center">
+      <i class="fa fa-anchor w3-padding-64 w3-text-red"></i>
     </div>
   </div>
 </div>
 
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+      <i class="fa fa-coffee w3-padding-64 w3-text-red w3-margin-right"></i>
+    </div>
 
+    <div class="w3-twothird">
+      <h1><strong>How?</strong></h1>
+      <h5 class="w3-padding-32">If you're on campus, go ahead and click on the "Need a Tutor" tab to get started! Tell us what you're having trouble with and we'll send out a request to all qualified Queens College students! <br />
+      </h5>
 
-</body>
-</html>
+      <p class="w3-text-grey">If you want to tutor, click on the "Am a Tutor" tab and tell us about yourself! Anytime there's a tutor request on campus we'll be sure to let you know!</p>
+    </div>
+  </div>
+</div>
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">Don't stress, we're here to help!</h1>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+  <div class="w3-xlarge w3-padding-32">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+ </div>
+
+</footer>
 
 
     <script src="js/index.js"></script>
