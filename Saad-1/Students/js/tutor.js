@@ -1,10 +1,3 @@
-function uuid() {
-
-    return crypto.getRandomValues(new Uint32Array(4)).join('-');
-
-}
-
- 
 
 $(document).ready(function() {
 
@@ -14,17 +7,15 @@ $(document).ready(function() {
 
     var scid = document.getElementById('scid')
 
-    var loc   = document.getElementById('location')
+    var math = document.getElementById('math')
+    var science = document.getElementById('science')
+    var arts = document.getElementById('arts')
 
-    var subject = document.getElementById('subject')
-
-    var prof = document.getElementById('prof')
 
     var email = document.getElementById('email')
 
        var smail  = String(email.value);
 
-       var pay = document.getElementById('pay')
 
    
 
@@ -44,7 +35,7 @@ $(document).ready(function() {
 
     }
 
-    else if(!loc.value){
+    else if(!email.value){
 
       alertify.error("Please choose a Tutoring Location");
 
@@ -52,21 +43,15 @@ $(document).ready(function() {
 
     }
 
-    else if(!subject.value){
-
-      alertify.error("Please choose a Subject");
-
+    
+    else if (!math.checked && !science.checked && !arts.checked)
+    {
+      alertify.error("Please check off a subject");
       return false;
 
     }
 
-    else if(!pay.value){
-
-      alertify.error("Please enter an hourly pay");
-
-      return false;
-
-    }
+    
 
     else if(!smail.includes("qmail")){
 
@@ -80,15 +65,12 @@ $(document).ready(function() {
 
     $(this).get(0).reset();
 
-      var unique = uuid();
+     
 
-      alertify.success("Request Sent");
+      alertify.success("Tutor Created");
 
    }
 
   });
 
 });
-
-
-

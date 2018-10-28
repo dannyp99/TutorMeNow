@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Join Session</title>
+    <title>Tutor</title>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1.0">
     <meta name="description" content="sample description">
@@ -138,49 +138,83 @@ input[type=submit]:hover {
   <div class="w3-bar w3-red w3-card w3-left-align w3-large">
     <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
     <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
-    <a href="student.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Need Tutor</a>
-    <a href="tutor.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Am Tutor</a>
+    <a href="student.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Need a Tutor</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Am a Tutor</a>
     <a href="session.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Join Session</a>
   </div>
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
 	<a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
-    <a href="student.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Need Tutor</a>
-    <a href="tutor.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Am Tutor</a>
-    <a href="session.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Join Session</a>
+    <a href="student.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Need a Tutor</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Am a Tutor</a>
+    <a href="session" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Join Session</a>
   </div>
 </div>
-<h2>In need of a tutor?</h2>
+<h2>
+<div style="text-align:center">
+  Tutor Registration
+  </h2>
+<h2>Tutor Registration</h2>
+</div>
 
 
 <div class="container">
   <div style="text-align:center">
-    <h2><strong>Clock in/Clock Out</strong></h2>
-   
-    <h1><time>00:00:00</time></h1>
-    
-<button id="start">start</button>
-<button id="stop">stop</button>
-
-    <p>Make sure to keep track of your tutoring time! </p>
-  
- 
+    <h2>Tutor Information</h2>
+    <p><strong>Put your information in and become a potential campus tutor!</strong></p>
+  </div>
   <div class="row">
-
+    <div class="column">
+      <div id="map" style="width:100%;height:600px"></div>
     </div>
     <div class="column">
-     
+      <form id="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name..">
+        <label for="scid">School I.D</label>
+        <input type="text" id="scid" name="schoolid" placeholder="Your School ID..">
        
-    
-        
-       
-      
 
+ 
+         <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="Your college email...">
+        <fieldset>
+    <legend>Subjects You Can Tutor</legend>
+
+    <div>
+        <input type="checkbox" id="math" name="feature"
+               value="math"  />
+        <label for="scales">Math</label>
+    </div>
+
+    <div>
+        <input type="checkbox" id="science" name="feature"
+               value="science" />
+        <label for="feature">Science</label>
+    </div>
+
+    <div>
+        <input type="checkbox" id="arts" name="feature"
+               value="feature" />
+        <label for="feature">Liberal Arts</label>
+    </div>
+
+</fieldset>
+        
+          
+          
+        <input type="submit" value="Submit">
+      </form>
     </div>
   </div>
+</div>
 
-<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+
+
+</body>
+</html>
+    <div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
     <h2 class="w3-margin w3-xlarge">Don't stress, we're here to help!</h2>
 </div>
 
@@ -196,18 +230,13 @@ input[type=submit]:hover {
  </div>
 
 </footer>
-
-  </div>
+ 
 
 </body>
   
 </html>
 
 
-    <script src="js/time.js"></script>
-
-
-        
-
+    <script src="js/tutor.js"></script>
   </body>
 </html>
