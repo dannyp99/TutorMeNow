@@ -10,6 +10,7 @@ $(document).ready(function() {
     var subject = document.getElementById('subject')
     var prof = document.getElementById('prof')
     var email = document.getElementById('email')
+	var smail  = String(email.value);
 
     if(!name.value){
     	alertify.error("Please enter your Name");
@@ -31,12 +32,12 @@ $(document).ready(function() {
       	alertify.error("Please enter your professor");
       	return false;
     }
-    else if(!email.value){
-      	alertify.error("Please enter your QC Student email");
+    else if(!smail.includes("qmail")){
+      	alertify.error("Enter your QC Student email");
       	return false;
     }else{
       e.preventDefault();
-      $(this).get(0).reset();
+    $(this).get(0).reset();
       var unique = uuid();
       alertify.success("Request Sent");
    }
