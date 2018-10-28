@@ -12,7 +12,7 @@ $(document).ready(function() {
     var email = document.getElementById('email')
 	var smail  = String(email.value);
 	var pay = document.getElementById('pay')
-
+    
     if(!name.value){
     	alertify.error("Please enter your Name");
       	return false;
