@@ -11,7 +11,8 @@ $(document).ready(function() {
     var prof = document.getElementById('prof')
     var email = document.getElementById('email')
 	var smail  = String(email.value);
-
+	var pay = document.getElementById('pay')
+    
     if(!name.value){
     	alertify.error("Please enter your Name");
       	return false;
@@ -28,8 +29,8 @@ $(document).ready(function() {
       	alertify.error("Please choose a Subject");
       	return false;
     }
-    else if(!prof.value){
-      	alertify.error("Please enter your professor");
+    else if(!pay.value){
+      	alertify.error("Please enter an hourly pay");
       	return false;
     }
     else if(!smail.includes("qmail")){
