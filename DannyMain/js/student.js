@@ -12,7 +12,7 @@ $(document).ready(function() {
     var email = document.getElementById('email')
 	var smail  = String(email.value);
 	var pay = document.getElementById('pay')
-    
+
     if(!name.value){
     	alertify.error("Please enter your Name");
       	return false;
@@ -29,11 +29,11 @@ $(document).ready(function() {
       	alertify.error("Please choose a Subject");
       	return false;
     }
-    else if(!pay.value){
+    else if(!pay.value || parseInt(pay.value) < 5){
       	alertify.error("Please enter an hourly pay");
       	return false;
     }
-    else if(!smail.includes("qmail")){
+    else if(!smail.includes("qmail") && !smail.includes("edu")){
       	alertify.error("Enter your QC Student email");
       	return false;
     }else{
